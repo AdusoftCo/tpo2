@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_flex{
+    background-color:grey;
+    display: flex;
+    justify-content:center;
+
+}
+.logo{
+    display:flex;
+    align-items: center;
+    width:40%;
+    padding-left:0.5rem;
+}
+h4.logo{
+    margin: 0;
+    padding: 0;
+}
+.img_logo{
+    width:20%;
+}
+.link{
+    text-decoration: none;
+    color: white;
+
+}
+.link:hover{
+    color: aqua;
+}
+.link4{
+    text-decoration: none;
+    color: rgb(52, 182, 84);
+        /*font-size: 0.75rem;->*/
+}
+
+.imagenMain{
+    width:100%;
+}
+/*pantalla divida*/
+.sectionDividida{
+    display: flex;
+    height:70vh;
+}
+.imagenIzq{
+    height:100%;
+    width:50%;
+    background-image: url("../assets/imagenes/honolulu.jpg");
+    background-size: cover;
+}
+.contenidoDer{
+    height:100%;
+    width:50%;
+    padding:2rem ;
+    background-color: #343333;
+    color:white;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sectionTarjetas{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tituloTarjetas, .formu{
+    padding-top: 0.50rem;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.padreTarjetas{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjetas_flex{
+    width:80%;
+    display:flex;
+
+    justify-content:space-between;
+
+}
+.tarjeta{
+    background-color: white;
+    width: 30%;
+    border:1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+}
+.tarjetaImagen{
+    width: 100%;
+    border-radius: 10px;
+}
+.tarjetaContenido{
+    padding:1rem;
+}
+.tarjetaParrafo{
+    width:80%;
+}
+.sectionPrincipal{
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), 
+                      url("../assets/imagenes/ba1.jpg");
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.contenidoPrincipal{
+    width: 60%;
+    padding-right: 1rem;
+    text-align: right;
+    color:white;
+}
+.link2{
+    color: cadetblue;
+}
+.link3{
+    color: chartreuse;
+}
+.tabla{
+    text-align: center;
+}
+button{
+    margin-top: 1rem;
+}
+.formular{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-left: 8rem;
+}
+.formu{
+    margin-left: 30vh;
+    margin-right: auto;
+}
+
+.footie{
+    text-decoration: none;
+    color:rgb(214, 214, 214);
+}
+/*celular*/
+@media screen and (min-width: 400px) and (max-width:768px){
+.header_flex{
+    flex-direction: column;
+    
+}
+.logo{
+    width:100%;
+    justify-content:space-between;
+    padding-right:2rem;
+    margin-bottom: 0.5rem;
+}
+.navegador{
+    width:100%;
+    flex-direction: column;
+    padding-right: initial;
+}   
+.link{
+    border-bottom: 1px solid rgb(57, 57, 57);
+    display:inline-block;
+    width:100%;
+    text-align: center;
+    padding-top:0.6rem;
+    padding-bottom:0.6rem;
+    font-size: 1.2rem;
+}
+/*imagen principal*/
+.sectionPrincipal .contenidoPrincipal{
+    width: auto;
+    flex-direction: column;
+    height: 60vh;
+    justify-content:center;
+    
+}
+.parrafoPrincipal{
+    line-height:1.5rem;
+    text-align: center;
+}
+
+/*tarjetas*/
+.tarjetas_flex{
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta{
+    width:90%;
+    margin-bottom: 1rem;
+    box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+                -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+                -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+}
+.tituloTarjetas.h3{
+    align-items: center;
+    margin-bottom:1rem;
+}
+.formu{
+    width: auto;
+    margin: 0;
+}
+}
+
+/*tablet*/
+/*@media screen and (min-width:769px) and (max-width:1024px){
+    .header__flex{
+        height: 5rem;
+    
+    }
+    .logo{
+        width:30%;
+    }
+    .navegador{
+        width:70%;
+        padding:0;
+        justify-content:space-between;
+    }
+}
