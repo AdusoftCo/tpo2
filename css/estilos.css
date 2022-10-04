@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 .header_flex{
+    margin: 0;
     background-color:grey;
     display: flex;
     justify-content:center;
@@ -15,7 +16,7 @@
 .logo{
     display:flex;
     align-items: center;
-    width:40%;
+    width:35%;
     padding-left:0.5rem;
 }
 h4.logo{
@@ -132,13 +133,11 @@ h4.logo{
 button{
     margin-top: 1rem;
 }
-.formular{
+/*.formular{
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
-    margin-left: 8rem;
-}
+}*/
 .formu{
     margin-left: 30vh;
     margin-right: auto;
@@ -149,16 +148,21 @@ button{
     color:rgb(214, 214, 214);
 }
 /*celular*/
-@media screen and (min-width: 400px) and (max-width:768px){
+@media screen and (max-width:768px){
 .header_flex{
     flex-direction: column;
     
 }
 .logo{
-    width:100%;
+    margin-left: 0.50rem;
+    margin-top: 0.50rem;
+    width:70%;
     justify-content:space-between;
     padding-right:2rem;
-    margin-bottom: 0.5rem;
+}
+.confe{
+    flex-direction: row;
+    text-align: left;
 }
 .navegador{
     width:100%;
