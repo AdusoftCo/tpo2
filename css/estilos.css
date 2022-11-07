@@ -17,7 +17,7 @@
     display:flex;
     align-items: center;
     width:35%;
-    padding-left:0.5rem;
+    padding: left 0.25rem;
 }
 h4.logo{
     margin: 0;
@@ -133,16 +133,22 @@ h4.logo{
 button{
     margin-top: 1rem;
 }
-/*.formular{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}*/
+.formulario{
+    width: 81%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 12rem;
+    margin-right: 10rem;
+}
+
 .formu{
     margin-left: 30vh;
     margin-right: auto;
 }
-
+.cartit, p{
+    margin: 0 auto;
+    text-align: center;
+}
 .footie{
     text-decoration: none;
     color:rgb(214, 214, 214);

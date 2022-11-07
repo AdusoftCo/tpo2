@@ -5,8 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra Tickets</title>
+    <link rel="shortcut icon" href="../assets/imagenes/favicon.ico">
+    <link href="../bcss/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/estilos.css" rel="stylesheet">
+
 </head>
-<body>
-    
+<!--barra del Nav-->
+<header class="header_flex">
+    <div class="logo">
+        <img class="img_logo" src="../assets/imagenes/codoacodo.png" alt="logo de codo a codo" loading="lazy">
+        <h5 class="confe">Conf. Bs.As.</h5>
+    </div>
+
+    <nav class="navbar navbar-expand-lg header_flex">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link link" href="#">La Conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../phpTp2/pages/los_oradores.html">Los Oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../phpTp2/pages/lugar_y_fecha.html">El Lugar y la Fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="../phpTp2/pages/contacto.html">Conviértete en Orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link4" href="#">Comprar Tickets</a>
+                    </li>
+                </ul>
+                
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!--Las 3 cards-->
+<div class="row row-cols-1 row-cols-md-3 g-2" style="width: 57%; margin: 0 auto;">
+    <div class="col" style="width: 33%;">
+        <div class="card text-center h-80 border-primary my-3 mb-3" style="max-width: 15rem;">
+            <div class="card-header text-bg-primary">Estudiante</div>
+                <div class="card-body py-1 pb-2">
+                    <p class="card-title">Tienen un descuento</p>
+                    <h3 class="card-text">80 %</h3>
+                    <small class="text-muted">* Presentar documentación</small>
+                </div>
+        </div>
+    </div>
+    <div class="col" style="width: 33%; margin-left: 0;">
+        <div class="card text-center h-85 border-info my-3 mb-3" style="max-width: 15rem;">
+            <div class="card-header text-bg-info text-white">Trainee</div>
+                <div class="card-body py-1 pb-2">
+                    <p class="card-title">Tienen un descuento</p>
+                    <h3 class="card-text">50 %</h3>
+                    <small class="text-muted">* Presentar documentación</small>
+                </div>
+        </div>
+    </div>
+    <div class="col" style="width: 33%; margin-left: 0;">
+        <div class="card text-center h-85 border-warning my-3 mb-3" style="max-width: 15rem;">
+            <div class="card-header text-bg-warning text-white">Junior</div>
+                <div class="card-body py-1 pb-2">
+                    <p class="card-title">Tienen un descuento</p>
+                    <h3 class="card-text">15 %</h3>
+                    <small class="text-muted">* Presentar documentación</small>
+                </div>
+        </div>
+    </div>
+</div>
+
+    <!--Promotions-->
+    <div class="cartit">
+        <p>VENTA</p>
+        <h3>VALOR DE TICKET $200</h3>
+    </div>
+    <!--formulario-->
+    <form class="row g-3" style="width: 57%; margin: 0 auto">
+        <div class="row g-3">
+            <div class="col-lg-6">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            
+            <div class="col-lg-6">
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido">
+            </div>
+        
+            <div class="col-lg-12">
+                <input type="email" class="form-control" id="mail" placeholder="Email" aria-label="Email">
+            </div>
+
+            <div class="col-lg-6">
+                <label class="col-lg-6" for="cantidad" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="cantidad" placeholder="Cantidad" aria-label="Cantidad">
+            </div>
+
+            <div class="col-lg-6">
+                <label class="col-lg-6" for="categoria" class="form-label">Categoria</label>
+                <select class="form-select" aria-label="Categoria" type="number" id="categoria">
+                    <option value="0">--Sin Opción--</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                </select>
+            </div>
+            
+        
+            <div class="col-lg-12 alert alert-primary p-3 mt-3 mb-1">
+                Total a Pagar: $ <span id="total" class="align-middle"></span> 
+            </div>
+            <!--botones-->
+            
+                <div class="col-lg-6 mt-0 mb-3">
+                    <button class="btn w-100 btn-md btn-form" id="borrar" type="reset" 
+                    style="background-color: rgb(131, 234, 29);">Borrar</button>
+                </div>
+                <div class="col-lg-6 mt-0 mb-3">
+                    <button class="btn w-100 btn-md btn-form" id="resumen" type="submit"
+                    style="background-color: rgb(131, 234, 29);">Resumen</button>
+                </div>
+            
+        </div>
+    </form>
+
+<!--Pie de pagina-->
+<footer class="row mt-0">
+        <div class="text-center p-4" style="background-color: rgba(36, 88, 151, 0.875);">
+            <a class="footie p-3 fw-bold" href="#">Preguntas Frecuentes</a>
+            <a class="footie p-3 fw-bold" href="#">Contáctanos</a>
+            <a class="footie p-3 fw-bold" href="#">Prensa</a>
+            <a class="footie p-3 fw-bold" href="#">Conferencias</a>
+            <a class="footie p-3 fw-bold" href="#">Términos y condiciones</a>
+            <a class="footie p-3 fw-bold" href="#">Privacidad</a>
+            <a class="footie p-3 fw-bold" href="#">Estudiantes</a>
+        </div>
+</footer>
+
+<script src="../bjs/bootstrap.min.js"></script>
+<script type='text/javascript' src="../bjs/jquery-3.6.1.min.js"></script>
+<script src="../bjs/proceso.js"></script>
 </body>
 </html>
