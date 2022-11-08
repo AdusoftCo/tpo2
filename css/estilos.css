@@ -37,7 +37,6 @@ h4.logo{
 .link4{
     text-decoration: none;
     color: rgb(52, 182, 84);
-        /*font-size: 0.75rem;->*/
 }
 
 .imagenMain{
@@ -133,18 +132,6 @@ h4.logo{
 button{
     margin-top: 1rem;
 }
-.formulario{
-    width: 81%;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: 12rem;
-    margin-right: 10rem;
-}
-
-.formu{
-    margin-left: 30vh;
-    margin-right: auto;
-}
 .cartit, p{
     margin: 0 auto;
     text-align: center;
@@ -153,22 +140,20 @@ button{
     text-decoration: none;
     color:rgb(214, 214, 214);
 }
+
 /*celular*/
 @media screen and (max-width:768px){
 .header_flex{
     flex-direction: column;
-    
+    text-align: center;
 }
-.logo{
+div.logo{
     margin-left: 0.50rem;
     margin-top: 0.50rem;
-    width:70%;
+    width:100%;
     justify-content:space-between;
     padding-right:2rem;
-}
-.confe{
-    flex-direction: row;
-    text-align: left;
+    text-align: right;
 }
 .navegador{
     width:100%;
